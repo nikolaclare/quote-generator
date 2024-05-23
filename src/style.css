@@ -65,8 +65,8 @@ form {
   border-bottom-right-radius: 10px;
 }
 
-.author {
-  font-style: italic;
+.quote strong {
+  color: #5c715e;
 }
 
 footer {
