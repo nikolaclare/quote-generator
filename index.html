@@ -20,12 +20,17 @@
         <h1>AI Quote Generator</h1>
       </header>
       <main>
-        <form action="" id="quote-generator-form">
-          <input type="text" placeholder="Enter the topic of an inspirational quote" autofocus required autocomplete="off"
-            class="instructions" id="user-instructions"/>
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="quote" id="quote">
+        <div class="form-container">
+          <form action="" id="quote-generator-form">
+            <input type="text" placeholder="Enter the topic of an inspirational quote" autofocus required
+              autocomplete="off" class="instructions" id="user-instructions" />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">
+            i.e. garden, home or cycling
+          </div>
+        </div>
+        <div class="quote hidden" id="quote">
         </div>
       </main>
       <footer>
