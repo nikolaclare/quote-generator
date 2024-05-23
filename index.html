@@ -4,30 +4,39 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
     <title>AI Quote Generator</title>
   </head>
 
   <body>
-    <header>
-      <h1>AI Quote Generator</h1>
-    </header>
-    <main>
-      <form action="">
-        <input type="text" placeholder="Enter the topic of the quote" autofocus required autocomplete="off" />
-        <input type="submit" />
-      </form>
-      <div>
-        "The greatest glory in living lies not in never falling, but in rising every time we fall."
-        <br />
-        - Nelson Mandela
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by <a href="https://github.com/nikolaclare" target="_blank">Nikola Ashton</a> and is
-      open sourced on <a href="https://github.com/nikolaclare/quote-generator" target="_blank">GitHub</a> and is hosted
-      on <a href="https://ai-quote-generator-project.netlify.app/" target="_blank">Netlify</a>.
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Quote Generator</h1>
+      </header>
+      <main>
+        <form action="">
+          <input type="text" placeholder="Enter the topic of the quote" autofocus required autocomplete="off"
+            class="instructions" />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="quote">
+          "The greatest glory in living lies not in never falling, but in rising every time we fall."
+          <div class="author">
+            - Nelson Mandela
+          </div>
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by <a href="https://github.com/nikolaclare" target="_blank">Nikola Ashton</a> and is
+        open sourced on <a href="https://github.com/nikolaclare/quote-generator" target="_blank">GitHub</a> and is
+        hosted
+        on <a href="https://ai-quote-generator-project.netlify.app/" target="_blank">Netlify</a>.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 
