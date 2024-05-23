@@ -1,5 +1,4 @@
 function displayQuote(response) {
-  console.log("Quote generated");
   new Typewriter("#quote", {
     strings: response.data.answer,
     autoStart: true,
@@ -19,10 +18,6 @@ function generateQuote(event) {
   let quoteElement = document.querySelector("#quote");
   quoteElement.classList.remove("hidden");
   quoteElement.innerHTML = `<div class="generating">⏳ Generating an inspirational quote about ${instructionsInput.value} </div>`;
-
-  console.log("Generating quote");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displayQuote);
 }
